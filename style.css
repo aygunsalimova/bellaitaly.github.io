@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --main-color: #c78801;
+    --main-shadow: 2px 2px var(--main-color);
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--main-color);
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+}
+
+header #logo {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.fa-pizza-slice {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-media {
+    border: 3px white solid;
+    border-radius: 0.5rem;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.social-media i {
+    margin: 0 2px 0 2px;
+}
+
+.fa-hashtag {
+    margin-right: 0 !important;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin-right: 5rem;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+nav ul li a {
+    color: white;
+    padding: 5px;
+    border: 3px transparent solid;
+    border-radius: 0.5rem;
+
+}
+
+nav ul li a:hover {
+    border-color: white;
+    opacity: 75%;
+}
+
+#nav-menu-icon {
+    visibility: hidden;
+}
+
+.nav-visible {
+    visibility: visible;
+}
+
+.nav-visible-ul {
+    flex-direction: row;
+    justify-content: end;
+    margin-right: auto;
+
+}
+
+.active {
+    border-color: white;
+    opacity: 75%;
+}
+
+/* HOME SECTION */
+
+main #home {
+    background-image: url(./img/entry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30vh;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+main #home hr {
+    width: 30rem;
+    height: 10px;
+    background-color: var(--main-color);
+    border: none;
+}
+
+main #home h1 {
+    text-shadow: 2px 2px var(--main-color);
+    font-size: 2rem;
+}
+
+main #home p {
+    color: var(--main-color);
+    font-weight: 700;
+    background-color: white;
+    padding: 5px 0 5px 0;
+}
+
+main #home a button {
+    background-color: white;
+    color: var(--main-color);
+    border: 3px var(--main-color) solid;
+    border-radius: 0.5rem;
+    padding: 10px;
+    font-weight: 700;
+    font-family: 'Itim', cursive;
+    font-size: 1rem;
+}
+
+main #home a button:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    border: 3px white solid;
+
+}
+
+/* HOURS SECTION */
+main #hours {
+    background-image: url(./img/middle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30vh;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+main #hours h1 {
+    font-size: 35px;
+    text-shadow: var(--main-shadow);
+}
+
+main #hours h1 sup {
+    font-size: 20px;
+    align-self: top;
+}
+
+/* MENU SECTION */
+main #menu {
+    display: flex;
+    justify-content: start;
+    min-height: 100vh;
+}
+
+main #menu #menu-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-image: url("img/end.jpg");
+    /* height: 100vh !important; */
+    width: 100%;
+}
+
+main #menu #menu-choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu-general {
+    background-image: linear-gradient(315deg, #AFF1DA 0%, #F9EA8F 85%);
+    padding-top: 30px;
+    padding-bottom: 2rem;
+
+}
+
+main #menu #menu-choices div {
+    margin: 0 3rem 0 3rem;
+    /* line-height: 8px; */
+}
+
+/* STAFF SECTION */
+
+#staff {
+    background-image: linear-gradient(45deg, #AFF1DA 0%, #F9EA8F 85%);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.staff-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.staff-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.staff-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    height: 300px;
+    background-color: var(--main-color);
+    border: 3px var(--main-color) solid;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.staff-card img {
+    width: 100% !important;
+    height: 180px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.staff-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.staff-container {
+    padding: 2px 6px;
+}
+
+.staff-h1 h1 {
+    text-shadow: 2px 2px var(--main-color);
+    font-size: 2rem;
+    color: white;
+}
+
+main #contact {
+    background-size: cover;
+    background-position: top;
+    background-color: var(--main-color);
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+main #contact div {
+    height: 75vh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px var(--main-color);
+    color: white;
+    border-radius: 1rem;
+}
+
+main #contact div h1 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+main #contact div h4 {
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+}
+
+.social-media-footer {
+    border: 3px var(--main-color) solid;
+    border-radius: 0.5rem;
+    padding: 5px;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+.social-media-footer i {
+    margin: 0 2px 0 2px;
+}
+
+
+footer a,
+footer a span {
+    font-family: 'Itim', cursive;
+    font-size: 1rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+
+    header #logo,
+    .fa-pizza-slice {
+        font-size: 1.5rem;
+    }
+
+    header {
+        justify-content: flex-end;
+    }
+
+    header #logo {
+        margin-left: 1rem;
+        margin-right: 13rem;
+        position: fixed;
+    }
+
+
+    main #menu {
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    main #menu #menu-img {
+        display: none;
+    }
+
+    main #home hr {
+        width: auto;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    #nav-menu-icon {
+        visibility: visible;
+        padding: 5px;
+        margin-right: 1rem;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-right: 0rem;
+        margin-top: 17rem;
+        background: var(--main-color);
+        display: none;
+    }
+
+    nav ul li a {
+        line-height: 4rem;
+
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .staff-center {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .staff-card {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+}
